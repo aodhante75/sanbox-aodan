@@ -1,0 +1,12 @@
+dbt_transactions:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: transactions_user
+      password: transactions_pass
+      port: 5433
+      dbname: transactions_db
+      schema: public
+      threads: 4

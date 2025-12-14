@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Datos de transacciones en bruto almacenados como texto en CSV seed
+    schema: public
+    tables:
+      - name: raw_transactions
+        description: Registros de transacciones en bruto con datos JSON almacenados como texto en la columna transaction
+        columns:
+          - name: transaction
+            description: JSON completo de transacción almacenado como texto, convertido a JSONB en los modelos para consultas eficientes
