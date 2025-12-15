@@ -19,7 +19,7 @@ ENV/
 
 # JSON files
 *.json
-*.jsonl
+#*.jsonl
 *.jsonb
 
 # IDE
